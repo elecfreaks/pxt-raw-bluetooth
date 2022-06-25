@@ -1,0 +1,9 @@
+{
+  "rawbluetooth.isConnected|block": "raw bluetooth is connected",
+  "rawbluetooth.onReceived|block": "on raw bluetooth received",
+  "rawbluetooth.sendBuffer|block": "raw bluetooth|send buffer from %bytes",
+  "rawbluetooth.setTransmitPower|block": "raw bluetooth|set transmit power %power",
+  "rawbluetooth.start|block": "raw bluetooth start",
+  "rawbluetooth|block": "rawbluetooth",
+  "{id:category}Rawbluetooth": "Rawbluetooth"
+}

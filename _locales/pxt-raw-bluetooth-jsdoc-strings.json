@@ -1,0 +1,9 @@
+{
+  "rawbluetooth": "Supports for raw bluetooth service.",
+  "rawbluetooth.isConnected": "Returns true if the service is connected.",
+  "rawbluetooth.onReceived": "On received raw data.",
+  "rawbluetooth.sendBuffer": "Sends raw data buffer(from a byte array).",
+  "rawbluetooth.setTransmitPower": "Sets the bluetooth transmit power between 0 (minimal) and 7 (maximum).",
+  "rawbluetooth.setTransmitPower|param|power": "power level between 0 (minimal) and 7 (maximum), eg: 7.",
+  "rawbluetooth.start": "Starts service."
+}

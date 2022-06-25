@@ -1,16 +1,18 @@
 {
     "name": "pxt-raw-bluetooth",
     "version": "0.0.0",
-    "description": "",
+    "description": "MakeCode bluetooth extension for raw data communication.",
     "dependencies": {
-        "core": "*",
-        "radio": "*",
-        "microphone": "*"
+        "core": "*"
     },
     "files": [
         "README.md",
-        "main.blocks",
-        "main.ts"
+        "shims.d.ts",
+        "enums.d.ts",
+        "raw-bluetooth.cpp",
+        "raw-bluetooth.ts",
+        "RawBluetoothService.h",
+        "RawBluetoothService.cpp"
     ],
     "testFiles": [
         "test.ts"
@@ -23,5 +25,29 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "enabled": 1,
+                    "open": 1,
+                    "pairing_mode": 0,
+                    "private_addressing": 0,
+                    "whitelist": 0,
+                    "advertising_timeout": 0,
+                    "dfu_service": 0,
+                    "event_service": 0,
+                    "device_info_service": 0,
+                    "security_level": "SECURITY_MODE_ENCRYPTION_NO_MITM"
+                }
+            }
+        },
+        "optionalConfig": {
+            "microbit-dal": {
+                "stack_size": 1280,
+                "gatt_table_size": "0x300"
+            }
+        }
+    }
 }
