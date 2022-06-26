@@ -56,7 +56,6 @@ uint8_t RawBluetoothService::read(uint8_t *data)
 {
     uint8_t len = receivedBytes;
     memcpy(data, &rxBuffer, len);
-    receivedBytes = 0;
     return len;
 }
 
@@ -127,7 +126,6 @@ uint8_t RawBluetoothService::read(uint8_t *data)
 {
     uint8_t len = receivedBytes;
     memcpy(data, &rxBuffer, len);
-    receivedBytes = 0;
     return len;
 }
 

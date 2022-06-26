@@ -71,7 +71,7 @@ namespace rawbluetooth {
      * Starts the raw bluetooth service.
      */
     //% shim=rawbluetooth::startService
-    function startService(): void {
+    export function startService(): void {
         return;
     }
 
@@ -79,7 +79,7 @@ namespace rawbluetooth {
      * write buffer.
      */
     //% shim=rawbluetooth::writeBuffer
-    function writeBuffer(buffer: Buffer): void {
+    export function writeBuffer(buffer: Buffer): void {
         return;
     }
 
@@ -87,7 +87,7 @@ namespace rawbluetooth {
      * read buffer.
      */
     //% shim=rawbluetooth::readBuffer
-    function readBuffer(): Buffer {
+    export function readBuffer(): Buffer {
         return Buffer.create(0);
     }
 }
